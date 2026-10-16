@@ -13,9 +13,10 @@
     "lint": "eslint src scripts tests",
     "test:unit": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
-    "check": "npm run typecheck && npm run lint && npm run test:unit && npm run build && tsx scripts/check-contrast.ts && tsx scripts/check-links.ts && npm run test:e2e",
+    "check": "npm run typecheck && npm run lint && npm run test:unit && npm run build && tsx scripts/check-contrast.ts && tsx scripts/check-links.ts && npm run test:e2e && npm run audit",
     "record": "tsx scripts/record.ts",
-    "audit": "tsx scripts/audit.ts"
+    "audit": "tsx scripts/audit.ts",
+    "verify:engines": "tsx scripts/verify-engines.ts"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",
@@ -24,7 +25,7 @@
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.0.0",
     "eslint": "^9.0.0",
-    "lighthouse": "^12.8.2",
+    "lighthouse": "^13.5.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.0",

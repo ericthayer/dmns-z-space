@@ -16,7 +16,7 @@ export function plate(c: Content, key: string, name: string, cls='', lcp=false):
   const m: Media = c.media[key]!;
   if (!m) throw new Error(`Missing plate ${key}`);
   const art = m.placeholder ? `<div class="plate-art" aria-hidden="true"><span class="plate-orbit"></span><span class="plate-axis"></span></div>` : `<picture>${m.avif ? `<source type="image/avif" srcset="${esc(m.avif)}">` : ''}${m.webp ? `<source type="image/webp" srcset="${esc(m.webp)}">` : ''}<img src="${esc(m.src)}" alt="${esc(m.alt)}" width="${m.width ?? 1200}" height="${m.height ?? 900}" ${lcp?'fetchpriority="high"':'loading="lazy"'}></picture>`;
-  return `<div class="plate ${esc(cls)}" data-shared-image>${art}<div class="plate-caption"><span class="eyebrow">${ui(c,'placeholder')}</span><span>${esc(name)}</span><span class="plate-credit">${esc(m.credit)}</span></div></div>`;
+  return `<div class="plate ${esc(cls)}" data-shared-image${m.placeholder?` role="img" aria-label="${esc(m.alt)}"`:""}>${art}<div class="plate-caption"><span class="eyebrow">${ui(c,'placeholder')}</span><span>${esc(name)}</span><span class="plate-credit">${esc(m.credit)}</span></div></div>`;
 }
 export function hallCard(c: Content, h: Hall, i: number): string {
   return `<li class="hall-item" data-wing="${h.wing}"><dmns-doorway><a href="/halls/${h.slug}/" class="hall-link" data-hall="${h.slug}">${plate(c,h.media,h.name)}<span class="hall-meta eyebrow"><span>${esc(h.floorNote)}</span><span>${String(i+1).padStart(2,'0')}</span></span><h3 data-shared-title>${esc(h.name)}</h3><p>${esc(h.description)}</p><span class="text-link">${ui(c,'openDoor')} ${arrow}</span>${h.sealed ? `<span class="scrim-label">${ui(c,'sealedLabel')}</span>`:''}</a></dmns-doorway></li>`;

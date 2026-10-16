@@ -1,0 +1,53 @@
+{
+  "method": "Lighthouse mobile lab simulation: 412×823, 4× CPU, simulated slow 4G. This is not a physical Moto G Power or field INP measurement.",
+  "results": [
+    {
+      "name": "atrium",
+      "path": "/",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2326.324,
+      "cls": 0,
+      "tbtMs": 140,
+      "fetchTime": "2026-10-16T07:27:40.997Z",
+      "browser": "156.0.8078.4",
+      "failedAudits": []
+    },
+    {
+      "name": "directory",
+      "path": "/halls/?floor=3",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2401.3814,
+      "cls": 0,
+      "tbtMs": 47.5,
+      "fetchTime": "2026-10-16T07:27:46.622Z",
+      "browser": "156.0.8078.4",
+      "failedAudits": []
+    },
+    {
+      "name": "hall",
+      "path": "/halls/prehistoric-journey/",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 2401.3617999999997,
+      "cls": 0,
+      "tbtMs": 0,
+      "fetchTime": "2026-10-16T07:27:51.954Z",
+      "browser": "156.0.8078.4",
+      "failedAudits": []
+    }
+  ]
+}

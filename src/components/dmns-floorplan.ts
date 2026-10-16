@@ -15,7 +15,7 @@ export class DmnsFloorplan extends HTMLElement {
       const type=next>this.#floor?'ascend':'descend';
       await transition(()=>{this.#floor=next;this.#render();const url=new URL(location.href);url.searchParams.set('floor',String(next));history.replaceState(null,'',url);},[type]);
       if(ticket!==this.#request)return;
-      const heading=this.querySelector<HTMLElement>(`#floor-heading-${next}`);heading?.focus({preventScroll:true});
+      const heading=this.querySelector<HTMLElement>(`#floor-heading-${next}`);heading?.scrollIntoView({block:'start',behavior:'instant'});heading?.focus({preventScroll:true});
       announce(`${pageCopy('floorChanged')}: ${heading?.textContent??''}`);
     }));
   }
@@ -23,6 +23,9 @@ export class DmnsFloorplan extends HTMLElement {
     this.querySelectorAll<HTMLElement>('[data-floor-panel]').forEach(p=>{p.hidden=p.dataset.floorPanel!==String(this.#floor);});
     this.querySelectorAll('[data-select-floor]').forEach(a=>{if(a.getAttribute('data-select-floor')===String(this.#floor))a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
     document.body.dataset.floor=String(this.#floor);
+    const sealed=this.querySelector<HTMLAnchorElement>('a[data-hall="gems-and-minerals"]');
+    if(sealed)sealed.href=`/halls/gems-and-minerals/?floor=${this.#floor}`;
+    this.dispatchEvent(new CustomEvent('dmns-floor-change',{bubbles:true,detail:{floor:this.#floor}}));
     this.dataset.wing=({0:'life',1:'space',2:'life',3:'culture'} as const)[this.#floor];
   }
 }

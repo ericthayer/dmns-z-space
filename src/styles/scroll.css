@@ -1,6 +1,7 @@
 /* Static styles are the baseline; no content depends on a timeline. */
 @supports(animation-timeline:view()){
  @media(prefers-reduced-motion:no-preference){
+  :root:not([data-stillness=true]) .hall-hero-art::after{content:'';position:absolute;inset:-20%;pointer-events:none;background:radial-gradient(ellipse at 65% 35%,color-mix(in srgb,var(--light-warm) 7%,transparent),transparent 52%);animation:spotlight-walk linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
   :root:not([data-stillness=true]) .hall-hero-art{animation:spotlight-reveal linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
   :root:not([data-stillness=true]) .diorama-backdrop{animation:walk-backdrop linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
   :root:not([data-stillness=true]) .vitrine-plate{animation:walk-specimen linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
@@ -11,3 +12,8 @@
 @keyframes walk-backdrop{from{transform:translateY(30px)}to{transform:translateY(-15px)}}
 @keyframes walk-specimen{from{transform:translateY(48px)}to{transform:translateY(0)}}
 @keyframes walk-label{from{transform:scale(.94);opacity:.6}to{transform:scale(1);opacity:1}}
+
+@media(prefers-reduced-motion:no-preference){:root:not([data-stillness=true]) .arrival h1{animation:arrival-light 1400ms ease both}:root:not([data-stillness=true]) .here-dot{animation:dot-breathe 3s ease-in-out infinite}}
+@keyframes arrival-light{from{opacity:.55}to{opacity:1}}
+@keyframes spotlight-walk{from{transform:translateX(-15%);opacity:.3}to{transform:translateX(5%);opacity:1}}
+@keyframes dot-breathe{50%{opacity:.45}}

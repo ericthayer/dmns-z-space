@@ -13,8 +13,8 @@ export class DmnsHeader extends HTMLElement {
     }
     if(theme){
       theme.hidden=false;
-      const sync=()=>{const next=document.documentElement.dataset.theme==='light'?'afterHours':'daylight';theme.setAttribute('aria-label',pageCopy(next));theme.title=pageCopy(next);};
-      sync();theme.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=next;writePreference('theme',next);sync();});
+      const sync=()=>{const next=document.documentElement.dataset.theme==='dark'?'daylight':document.documentElement.dataset.theme==='light'?'systemTheme':'afterHours';theme.setAttribute('aria-label',pageCopy(next));theme.title=pageCopy(next);};
+      sync();theme.addEventListener('click',()=>{const current=document.documentElement.dataset.theme;const next=current==='dark'?'light':current==='light'?'system':'dark';if(next==='system')delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=next;writePreference('theme',next);sync();});
     }
   }
 }

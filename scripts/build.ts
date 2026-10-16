@@ -3,10 +3,11 @@ import {loadContent} from '../src/lib/content.js';
 import {createPositions} from '../src/lib/coordinates.js';
 import {localDate} from '../src/lib/dates.js';
 import {shell} from '../src/templates/shell.js';
+import {ui} from '../src/templates/partials.js';
 import {home,directory,hall,specials,theaters,detail,editorial,programs} from '../src/templates/pages.js';
 const c=await loadContent();
 const today=process.env.BUILD_DATE??localDate();
-if(!/^\d{4}-\d{2}-\d{2}$/.test(today)||Number.isNaN(Date.parse(today)))throw new Error('BUILD_DATE must be YYYY-MM-DD');
+if(!/^\d{4}-\d{2}-\d{2}$/.test(today)||Number.isNaN(Date.parse(today))||new Date(`${today}T12:00:00Z`).toISOString().slice(0,10)!==today)throw new Error('BUILD_DATE must be YYYY-MM-DD');
 const routes=createPositions(c.halls,c.exhibitions,c.theaters,c.pages);
 await rm('dist',{recursive:true,force:true});await mkdir('dist/assets',{recursive:true});
 await cp('public','dist',{recursive:true});
@@ -38,5 +39,5 @@ for(const route of routes){
 }
 await writeFile('dist/route-manifest.json',JSON.stringify({today,routes},null,2));
 await writeFile('dist/robots.txt','User-agent: *\nAllow: /\n');
-await writeFile('dist/404.html',shell(c,routes[0]!,routes,'Page not found','<section class="section page-intro"><p class="eyebrow">404</p><h1>Page not found</h1><p><a class="text-link" href="/">Back to the Atrium ↗</a></p></section>',today));
+await writeFile('dist/404.html',shell(c,routes[0]!,routes,'Page not found',`<section class="section page-intro"><p class="eyebrow">404</p><h1>${ui(c,'notFound')}</h1><p><a class="text-link" href="/">${ui(c,'backAtrium')} ↗</a></p></section>`,today));
 console.log(`Built ${pages.size} routes for ${today} (America/Denver).`);

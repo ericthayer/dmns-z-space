@@ -264,7 +264,13 @@
     "nextDoorway": "Where to next?",
     "theatersLabel": "Films, space & light",
     "on": "On",
-    "off": "Off"
+    "off": "Off",
+    "headerConnect": "Membership & support",
+    "floorNavigation": "Choose a floor",
+    "mapNavigation": "Museum minimap",
+    "notFound": "Page not found",
+    "mapRooms": "Rooms",
+    "systemTheme": "Use system theme"
   },
   "doors": [
     {

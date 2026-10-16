@@ -1,0 +1,43 @@
+{
+  "viewport": "1440×1000",
+  "browser": "156.0.8078.4",
+  "input": "Keyboard only: Tab, Enter, PageDown, Escape",
+  "steps": [
+    {
+      "second": 6.001,
+      "action": "Tab to Halls and enter the Directory"
+    },
+    {
+      "second": 12.002,
+      "action": "Choose Floor 3"
+    },
+    {
+      "second": 19.002,
+      "action": "Enter Prehistoric Journey through its doorway"
+    },
+    {
+      "second": 27.001,
+      "action": "Walk down the hall to the vitrine"
+    },
+    {
+      "second": 33,
+      "action": "Open object detail"
+    },
+    {
+      "second": 40,
+      "action": "Escape closes detail and restores focus"
+    },
+    {
+      "second": 45,
+      "action": "Walk sideways to Egyptian Mummies"
+    },
+    {
+      "second": 53.001,
+      "action": "Return to the Atrium"
+    },
+    {
+      "second": 60,
+      "action": "Walkthrough complete"
+    }
+  ]
+}

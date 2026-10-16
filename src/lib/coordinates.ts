@@ -30,5 +30,5 @@ export function directoryFloor(value: string | null): Floor | null {
 export function positionFor(url: URL, positions: readonly RoutePosition[]): RoutePosition | undefined {
   const base = positions.find(p => p.path === normalizePath(url.pathname));
   const floor = directoryFloor(url.searchParams.get('floor'));
-  return base?.path === '/halls/' && floor !== null ? {...base, floor} : base;
+  return (base?.path === '/halls/' || base?.path === '/halls/gems-and-minerals/') && floor !== null ? {...base, floor} : base;
 }

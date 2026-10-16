@@ -17,7 +17,7 @@ const root=document.documentElement;
 root.dataset.vt=String('startViewTransition' in document);
 root.dataset.vtClasses=String(CSS.supports('view-transition-class: a'));
 root.dataset.scrollTimelines=String(CSS.supports('animation-timeline: view()'));
-if(!('onpageswap' in window && 'onpagereveal' in window))root.dataset.entrance='fallback';
+if(!('CSSViewTransitionRule' in window && 'onpageswap' in window && 'onpagereveal' in window))root.dataset.entrance='fallback';
 if(HTMLScriptElement.supports?.('speculationrules')){
   const rules=document.createElement('script');rules.type='speculationrules';
   rules.textContent=JSON.stringify({prerender:[{source:'document',where:{and:[{selector_matches:'dmns-doorway a[href]'},{not:{href_matches:'https://*'}}]},eagerness:'moderate'}]});document.head.append(rules);

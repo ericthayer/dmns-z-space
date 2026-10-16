@@ -1,0 +1,47 @@
+[
+  {
+    "name": "chromium",
+    "version": "156.0.8078.4",
+    "features": {
+      "sameDocument": true,
+      "pageswap": true,
+      "pagereveal": true,
+      "crossDocumentRule": true,
+      "classes": true,
+      "types": true,
+      "scrollTimeline": true
+    },
+    "observedDirectoryToHall": "enter",
+    "date": "2026-10-16"
+  },
+  {
+    "name": "firefox",
+    "version": "157.0",
+    "features": {
+      "sameDocument": true,
+      "pageswap": false,
+      "pagereveal": false,
+      "crossDocumentRule": false,
+      "classes": true,
+      "types": true,
+      "scrollTimeline": false
+    },
+    "observedDirectoryToHall": "ordinary navigation",
+    "date": "2026-10-16"
+  },
+  {
+    "name": "webkit",
+    "version": "27.2",
+    "features": {
+      "sameDocument": true,
+      "pageswap": true,
+      "pagereveal": true,
+      "crossDocumentRule": true,
+      "classes": true,
+      "types": true,
+      "scrollTimeline": true
+    },
+    "observedDirectoryToHall": "enter",
+    "date": "2026-10-16"
+  }
+]
