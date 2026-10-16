@@ -1,0 +1,1 @@
+{"compilerOptions":{"target":"ES2022","module":"None","moduleDetection":"legacy","strict":true,"skipLibCheck":true,"types":[],"lib":["DOM","ES2022"],"outFile":"dist/assets/preferences.js","removeComments":true},"files":["src/preferences.ts"]}

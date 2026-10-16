@@ -1,0 +1,12 @@
+/exhibitions/permanent-exhibitions/ /halls/ 301
+/exhibitions/permanent-exhibitions/:slug/ /halls/:slug/ 301
+/exhibitions/temporary-exhibitions/ /special-exhibitions/ 301
+/exhibitions/temporary-exhibitions/:slug/ /special-exhibitions/:slug/ 301
+/films-shows/ /theaters/ 301
+/films-shows/gates-planetarium/ /theaters/gates-planetarium/ 301
+/films-shows/sturm-infinity-theater/ /theaters/sturm-infinity-theater/ 301
+/films-shows/laser-shows/ /theaters/laser-shows/ 301
+/visit/sturm-family-wing/ /sturm-family-wing/ 301
+/programs-and-events/ /programs/ 301
+/learn/school-programs/ /learn/ 301
+/science/collections/ /science/ 301

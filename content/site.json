@@ -1,0 +1,298 @@
+{
+  "name": "Denver Museum of Nature & Science",
+  "shortName": "DMNS",
+  "concept": "After Hours",
+  "conceptLabel": "An independent concept redesign",
+  "description": "Explore the Denver Museum of Nature & Science as a building of discovery: halls, special exhibitions, theaters and collections.",
+  "timezone": "America/Denver",
+  "seedDate": "2026-10-16",
+  "todayLabel": "Today’s hours",
+  "hours": "9 a.m.–5 p.m. daily",
+  "fridayHours": "9 a.m.–9 p.m. most Fridays",
+  "closures": "Closed December 25 and August 26",
+  "address": "2001 Colorado Blvd., Denver, CO 80205",
+  "ticketUrl": "https://www.dmns.org/purchase/",
+  "membershipUrl": "https://www.dmns.org/purchase/membership/#general-memberships",
+  "donateUrl": "https://www.dmns.org/?campaign=677961",
+  "landAcknowledgment": "TODO: confirm with DMNS",
+  "landSource": "https://www.dmns.org/",
+  "legal": "The Denver Museum of Nature & Science is a 501(c)(3) nonprofit organization.",
+  "credentials": [
+    "SCFD",
+    "Charity Navigator"
+  ],
+  "nav": [
+    {
+      "label": "Halls",
+      "href": "/halls/"
+    },
+    {
+      "label": "Special Exhibitions",
+      "href": "/special-exhibitions/"
+    },
+    {
+      "label": "Theaters",
+      "href": "/theaters/"
+    },
+    {
+      "label": "Visit",
+      "href": "/visit/"
+    }
+  ],
+  "footerNav": [
+    {
+      "label": "Programs & Events",
+      "href": "/programs/"
+    },
+    {
+      "label": "School Programs",
+      "href": "/learn/"
+    },
+    {
+      "label": "Behind the Glass",
+      "href": "/science/"
+    },
+    {
+      "label": "The East Entrance",
+      "href": "/sturm-family-wing/"
+    },
+    {
+      "label": "About the Museum",
+      "href": "/about/"
+    },
+    {
+      "label": "Support the Museum",
+      "href": "/support/"
+    },
+    {
+      "label": "Catalyst Magazine",
+      "href": "https://www.dmns.org/catalyst/"
+    },
+    {
+      "label": "Digital Collections",
+      "href": "https://dmns.netx.net/portals/public/#page/home"
+    },
+    {
+      "label": "Search the museum",
+      "href": "https://www.dmns.org/search/"
+    },
+    {
+      "label": "Login",
+      "href": "https://www.dmns.org/login"
+    },
+    {
+      "label": "Tickets & cart",
+      "href": "https://www.dmns.org/purchase/"
+    }
+  ],
+  "socials": [
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/DMNSorg"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/denvermuseumns/"
+    },
+    {
+      "label": "Threads",
+      "href": "https://www.threads.net/@denvermuseumns"
+    },
+    {
+      "label": "TikTok",
+      "href": "https://www.tiktok.com/@denvermns"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/user/DMNSorg"
+    },
+    {
+      "label": "Bluesky",
+      "href": "https://bsky.app/profile/denvermuseumns.bsky.social"
+    }
+  ],
+  "policies": [
+    {
+      "label": "Conditions of Use",
+      "href": "https://www.dmns.org/about/policies-and-permissions/#conditions"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "https://www.dmns.org/about/policies-and-permissions/#privacypolicy"
+    },
+    {
+      "label": "Safe Spaces Policy",
+      "href": "https://www.dmns.org/about/policies-and-permissions/#safepolicy"
+    },
+    {
+      "label": "Comment Policy",
+      "href": "https://www.dmns.org/about/policies-and-permissions/#commentpolicy"
+    },
+    {
+      "label": "Press Room",
+      "href": "https://www.dmns.org/press-room/"
+    },
+    {
+      "label": "Careers",
+      "href": "https://www.dmns.org/about/careers/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "https://www.dmns.org/contact-us/"
+    },
+    {
+      "label": "Financials",
+      "href": "https://www.dmns.org/about/museum-financials/"
+    }
+  ],
+  "ui": {
+    "skip": "Skip to content",
+    "tickets": "Buy tickets",
+    "membership": "Membership",
+    "donate": "Donate",
+    "stillness": "Stillness",
+    "daylight": "Daylight",
+    "afterHours": "After hours",
+    "menu": "Explore the museum",
+    "close": "Close",
+    "dismiss": "Dismiss notice",
+    "directory": "Directory",
+    "backAtrium": "Back to the Atrium",
+    "allHalls": "Explore the halls",
+    "openDoor": "Step inside",
+    "scroll": "Scroll to explore",
+    "arrivalLabel": "Denver, Colorado · A world of discovery",
+    "arrivalIntro": "Follow your curiosity. There is a whole world inside.",
+    "doorTitle": "Every doorway, a new world.",
+    "doorIntro": "Choose where your curiosity takes you.",
+    "nowTitle": "A different kind of discovery.",
+    "nowLabel": "In the galleries",
+    "allExhibitions": "All special exhibitions",
+    "eventTitle": "Make room for curiosity.",
+    "eventLabel": "Programs & events",
+    "eventEmpty": "Event details are awaiting confirmation.",
+    "previousEvents": "Previous events",
+    "nextEvents": "Next events",
+    "scienceTitle": "There is more behind the glass.",
+    "scienceIntro": "Collections. Research. The questions that come next.",
+    "scienceLink": "Go behind the glass",
+    "visitTitle": "Your next discovery starts here.",
+    "visitLink": "Plan your visit",
+    "wayfinding": "Find your way",
+    "directoryTitle": "The Directory",
+    "directoryIntro": "One museum. Many worlds. Choose a floor, then step into a hall.",
+    "floorPrefix": "Floor",
+    "floorUnknown": "Floor to be confirmed",
+    "floorplanCaption": "Schematic wayfinding · not an architectural plan",
+    "youAreHere": "You are here",
+    "currentLocation": "Current location",
+    "sealed": "A new chapter is taking shape.",
+    "sealedLabel": "Closed for renovation",
+    "sealedBody": "Gems and Minerals is closed for major renovation and expansion.",
+    "sealedLocation": "Shown outside the numbered floors until its location is confirmed.",
+    "objectLabel": "At the vitrine",
+    "objectIntro": "A closer look",
+    "objectOpen": "Open object detail",
+    "objectClose": "Close object detail",
+    "objectDetails": "Object details",
+    "placeholder": "Photography to come",
+    "objectPending": "Collection object and label pending confirmation.",
+    "continueJourney": "Continue your journey",
+    "previousHall": "Previous hall",
+    "nextHall": "Next hall",
+    "upperFloor": "Continue to the Floor 3 section",
+    "lowerFloor": "Return to the Floor 2 section",
+    "wildlifeUpper": "Wildlife Halls · Floor 3",
+    "filters": "Filter exhibitions",
+    "filterAll": "All",
+    "filterCurrent": "Now showing",
+    "filterComing": "Coming soon",
+    "filterResult": "exhibitions",
+    "programFilters": "Filter programs",
+    "filterProgramsAll": "All programs",
+    "filterEvents": "Events",
+    "filterLearning": "Learning",
+    "programHeading": "Programs & Events",
+    "programIntro": "Find your next moment of discovery.",
+    "theatersHeading": "Theaters & Dome",
+    "theatersIntro": "A seat at the edge of discovery.",
+    "specialHeading": "Special Exhibitions Gallery",
+    "specialIntro": "See the world from another perspective.",
+    "labelNumber": "Plate",
+    "sourceLink": "Visit the official website",
+    "newsletter": "Stay curious.",
+    "newsletterLabel": "Email address",
+    "newsletterPlaceholder": "you@example.com",
+    "newsletterButton": "Preview signup",
+    "newsletterHint": "Concept form · no information is sent or saved.",
+    "newsletterThanks": "This is a concept signup. No information was sent or saved.",
+    "footerLine": "Nature. Science. Wonder.",
+    "landTitle": "Land acknowledgment",
+    "pending": "TODO: confirm with DMNS",
+    "conceptNotice": "Concept experience. Tickets and services open the official museum website.",
+    "external": "Official website",
+    "footerExplore": "Explore",
+    "footerConnect": "Connect",
+    "footerVisit": "Visit",
+    "closed": "Closed today",
+    "regularHours": "9 a.m.–5 p.m.",
+    "fridayNote": "Most Fridays until 9 p.m. · check official hours",
+    "sectionPending": "Details awaiting confirmation.",
+    "collections": "Collections",
+    "gettingHere": "Getting here",
+    "accessibility": "Accessibility",
+    "pricing": "Pricing & discounts",
+    "eatShop": "Eat & shop",
+    "directoryReturn": "Back to the Directory",
+    "plaza": "Sturm Family Plaza",
+    "lobby": "Sturm Infinity Lobby",
+    "theater": "Sturm Infinity Theater",
+    "objects": "Objects in this hall",
+    "floorChanged": "Selected",
+    "resultChanged": "Results updated",
+    "noResults": "No entries in this category.",
+    "upcoming": "Coming",
+    "nowShowing": "Now showing",
+    "hoursLabel": "Hours",
+    "addressLabel": "Find us",
+    "dateLabel": "Date to be confirmed",
+    "exhibitionDetails": "Exhibition details",
+    "floorLabelsOut": "Outdoors",
+    "policies": "Policies & information",
+    "thresholdLabel": "An architectural study in curiosity",
+    "chooseDoorway": "Choose your doorway",
+    "nextDoorway": "Where to next?",
+    "theatersLabel": "Films, space & light",
+    "on": "On",
+    "off": "Off"
+  },
+  "doors": [
+    {
+      "name": "Halls",
+      "description": "Across time. Beyond Earth. Into life.",
+      "href": "/halls/",
+      "meta": "The permanent collection",
+      "wing": "culture"
+    },
+    {
+      "name": "Special Exhibitions",
+      "description": "New perspectives. New possibilities.",
+      "href": "/special-exhibitions/",
+      "meta": "The changing galleries",
+      "wing": "special"
+    },
+    {
+      "name": "Theaters & Dome",
+      "description": "A bigger way to see the world.",
+      "href": "/theaters/",
+      "meta": "Films, space & light",
+      "wing": "theaters"
+    }
+  ],
+  "floorLabels": [
+    "Outdoors",
+    "Space & discovery",
+    "Life & health",
+    "Deep time & culture"
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Science Lounge",
+    "description": "TODO: confirm with DMNS",
+    "category": "events",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "name": "Free Days",
+    "description": "TODO: confirm with DMNS",
+    "category": "events",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "name": "Science Camps",
+    "description": "TODO: confirm with DMNS",
+    "category": "learning",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "name": "Birthday Parties",
+    "description": "TODO: confirm with DMNS",
+    "category": "events",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "name": "Discovery Station",
+    "description": "TODO: confirm with DMNS",
+    "category": "learning",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "name": "Host an Event",
+    "description": "TODO: confirm with DMNS",
+    "category": "events",
+    "href": "https://www.dmns.org/programs-and-events/"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "dmns-after-hours",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "npm run build && tsx scripts/serve.ts",
+    "build": "tsx scripts/build.ts && tsc -p tsconfig.browser.json && tsc -p tsconfig.bootstrap.json && tsx scripts/check-budgets.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src scripts tests",
+    "test:unit": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm run lint && npm run test:unit && npm run build && tsx scripts/check-contrast.ts && tsx scripts/check-links.ts && npm run test:e2e",
+    "record": "tsx scripts/record.ts",
+    "audit": "tsx scripts/audit.ts"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@fontsource-variable/jost": "^5.2.8",
+    "@fontsource-variable/newsreader": "^5.2.8",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.0.0",
+    "lighthouse": "^12.8.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "zod": "^4.1.0"
+  }
+}

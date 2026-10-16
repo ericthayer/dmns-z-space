@@ -1,0 +1,50 @@
+@view-transition{navigation:auto;types:none}
+::view-transition{pointer-events:none}
+::view-transition-group(root){perspective:1400px;animation-timing-function:var(--motion-ease)}
+::view-transition-old(root),::view-transition-new(root){transform-origin:var(--vt-origin-x) var(--vt-origin-y);animation-timing-function:var(--motion-ease);animation-fill-mode:both}
+:active-view-transition-type(enter)::view-transition-old(root){animation:door-out var(--enter-time) var(--motion-ease) both}
+:active-view-transition-type(enter)::view-transition-new(root){animation:door-in var(--enter-time) var(--motion-ease) both}
+:active-view-transition-type(exit)::view-transition-old(root){animation:step-out var(--exit-time) var(--motion-ease) both}
+:active-view-transition-type(exit)::view-transition-new(root){animation:step-in var(--exit-time) var(--motion-ease) both}
+:active-view-transition-type(lateral-r)::view-transition-old(root){animation:corridor-out-r var(--lateral-time) var(--motion-ease) both}
+:active-view-transition-type(lateral-r)::view-transition-new(root){animation:corridor-in-r var(--lateral-time) var(--motion-ease) both}
+:active-view-transition-type(lateral-l)::view-transition-old(root){animation:corridor-out-l var(--lateral-time) var(--motion-ease) both}
+:active-view-transition-type(lateral-l)::view-transition-new(root){animation:corridor-in-l var(--lateral-time) var(--motion-ease) both}
+:active-view-transition-type(ascend)::view-transition-old(root){animation:up-out var(--floor-time) var(--motion-ease) both}
+:active-view-transition-type(ascend)::view-transition-new(root){animation:up-in var(--floor-time) var(--motion-ease) both}
+:active-view-transition-type(descend)::view-transition-old(root){animation:down-out var(--floor-time) var(--motion-ease) both}
+:active-view-transition-type(descend)::view-transition-new(root){animation:down-in var(--floor-time) var(--motion-ease) both}
+:active-view-transition-type(reload)::view-transition-old(root),:active-view-transition-type(reload)::view-transition-new(root){animation-duration:var(--still-time)}
+::view-transition-group(.hall-door),::view-transition-group(.hall-title),::view-transition-group(.gallery-item),::view-transition-group(vitrine-object){animation-duration:var(--enter-time);animation-timing-function:var(--motion-ease)}
+::view-transition-old(.hall-door),::view-transition-new(.hall-door){height:100%;object-fit:cover}
+::view-transition-old(.gallery-item){animation:fade-out var(--fallback-time) ease both}
+::view-transition-new(.gallery-item){animation:fade-in var(--fallback-time) ease both}
+::view-transition-group(site-header),::view-transition-group(minimap),::view-transition-group(ticket){animation:none}
+::view-transition-old(site-header),::view-transition-old(minimap),::view-transition-old(ticket){animation:none;opacity:0}
+::view-transition-new(site-header),::view-transition-new(minimap),::view-transition-new(ticket){animation:none}
+:active-view-transition-type(ascend)::view-transition-old(stairs){animation:rails-up var(--floor-time) var(--motion-ease) both}
+:active-view-transition-type(descend)::view-transition-new(stairs){animation:rails-down var(--floor-time) var(--motion-ease) both}
+[data-sealed-transition=true]:active-view-transition-type(enter)::view-transition-old(root){animation:sealed-out var(--sealed-time) var(--motion-ease) both}
+[data-sealed-transition=true]:active-view-transition-type(enter)::view-transition-new(root){animation:sealed-in var(--sealed-time) var(--motion-ease) both}
+[data-sealed-transition=true]::view-transition-group(.hall-door),[data-sealed-transition=true]::view-transition-group(.hall-title){animation-duration:var(--sealed-time)}
+[data-entrance=fallback] main{animation:fade-in var(--fallback-time) ease both}
+@keyframes door-out{to{transform:scale(1.35);opacity:0;filter:blur(6px)}}
+@keyframes door-in{from{transform:scale(.82);opacity:0;filter:brightness(.4)}to{transform:scale(1);opacity:1;filter:brightness(1)}}
+@keyframes step-out{to{transform:scale(.82);opacity:0;filter:brightness(.4)}}
+@keyframes step-in{from{transform:scale(1.2);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes corridor-out-r{to{transform:translateX(-30vw) rotateY(-8deg);opacity:0}}
+@keyframes corridor-in-r{from{transform:translateX(30vw) rotateY(8deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes corridor-out-l{to{transform:translateX(30vw) rotateY(8deg);opacity:0}}
+@keyframes corridor-in-l{from{transform:translateX(-30vw) rotateY(-8deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes up-out{to{transform:translateY(-40vh);opacity:0}}@keyframes up-in{from{transform:translateY(40vh);opacity:0}to{transform:none;opacity:1}}
+@keyframes down-out{to{transform:translateY(40vh);opacity:0}}@keyframes down-in{from{transform:translateY(-40vh);opacity:0}to{transform:none;opacity:1}}
+@keyframes rails-up{from{opacity:.5}to{transform:translateY(-80vh);opacity:0}}@keyframes rails-down{from{transform:translateY(-80vh);opacity:0}50%{opacity:.5}to{transform:none;opacity:0}}
+@keyframes sealed-out{to{transform:scale(1.06);opacity:0}}@keyframes sealed-in{from{transform:scale(.96);opacity:.4}to{transform:none;opacity:1}}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}@keyframes fade-out{to{opacity:0}}
+/* Universal pseudo-element overrides also suppress the UA's shared-element transforms. */
+:root[data-stillness=true]::view-transition-group(*),:root[data-stillness=true]::view-transition-image-pair(*){animation:none!important}
+:root[data-stillness=true]::view-transition-old(*){animation:fade-out var(--still-time) linear both!important;transform:none!important;filter:none!important}
+:root[data-stillness=true]::view-transition-new(*){animation:fade-in var(--still-time) linear both!important;transform:none!important;filter:none!important}
+:root[data-stillness=true] *, :root[data-stillness=true] *::before,:root[data-stillness=true] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}::view-transition-group(*),::view-transition-image-pair(*){animation:none!important}::view-transition-old(*){animation:fade-out var(--still-time) linear both!important;transform:none!important;filter:none!important}::view-transition-new(*){animation:fade-in var(--still-time) linear both!important;transform:none!important;filter:none!important}}
+@media(prefers-reduced-transparency:reduce){.plate,.sealed-hall,.sealed-directory,dialog,dialog::backdrop{background:var(--surface-1);opacity:1;backdrop-filter:none}.construction-lines{display:none}::view-transition-old(*),::view-transition-new(*){filter:none!important}}

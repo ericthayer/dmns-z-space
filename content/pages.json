@@ -1,0 +1,170 @@
+[
+  {
+    "path": "/visit/",
+    "name": "Plan Your Visit",
+    "eyebrow": "Before you arrive",
+    "intro": "Your next discovery starts here.",
+    "floor": 0,
+    "wing": "neutral",
+    "sections": [
+      {
+        "title": "Hours",
+        "body": "9 a.m.–5 p.m. daily. 9 a.m.–9 p.m. most Fridays. Closed December 25 and August 26."
+      },
+      {
+        "title": "Find us",
+        "body": "2001 Colorado Blvd., Denver, CO 80205"
+      },
+      {
+        "title": "Pricing & discounts",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/visit/pricing-and-discounts/"
+      },
+      {
+        "title": "Accessibility",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/visit/accessibility/"
+      },
+      {
+        "title": "Getting here",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/visit/getting-here/"
+      },
+      {
+        "title": "Eat & shop",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/visit/eat-shop/"
+      }
+    ]
+  },
+  {
+    "path": "/sturm-family-wing/",
+    "name": "The East Entrance",
+    "eyebrow": "Sturm Family Wing",
+    "intro": "Part curiosity lab. Part classroom. Part cultural commons.",
+    "floor": 0,
+    "wing": "culture",
+    "sections": [
+      {
+        "title": "Sturm Family Plaza",
+        "body": "Free, open daily 5 a.m.–11 p.m. T.REX Cafe and community events."
+      },
+      {
+        "title": "Sturm Infinity Theater",
+        "body": "Giant-screen films, lectures and evening events. Separate ticket.",
+        "url": "/theaters/sturm-infinity-theater/"
+      },
+      {
+        "title": "Sturm Infinity Lobby",
+        "body": "Events only."
+      }
+    ]
+  },
+  {
+    "path": "/learn/",
+    "name": "School Programs",
+    "eyebrow": "Learning together",
+    "intro": "TODO: confirm with DMNS",
+    "floor": 1,
+    "wing": "life",
+    "sections": [
+      {
+        "title": "Onsite",
+        "body": "TODO: confirm with DMNS"
+      },
+      {
+        "title": "Offsite",
+        "body": "TODO: confirm with DMNS"
+      },
+      {
+        "title": "Virtual",
+        "body": "TODO: confirm with DMNS"
+      },
+      {
+        "title": "Teacher Professional Development",
+        "body": "TODO: confirm with DMNS"
+      },
+      {
+        "title": "Scholarships",
+        "body": "TODO: confirm with DMNS"
+      }
+    ]
+  },
+  {
+    "path": "/science/",
+    "name": "Behind the Glass",
+    "eyebrow": "Collections & research",
+    "intro": "Collections. Labs. People. Publications. Research.",
+    "floor": 0,
+    "wing": "neutral",
+    "sections": [
+      {
+        "title": "Anthropology & Archaeology",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/science/collections/anthropology-collections/"
+      },
+      {
+        "title": "Paleontology & Geology",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/science/collections/earth-sciences-collections/"
+      },
+      {
+        "title": "Vertebrate & Invertebrate Zoology",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/science/collections/zoology-collections/"
+      },
+      {
+        "title": "Archives",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/science/collections/archives/"
+      },
+      {
+        "title": "DMNS Digital Collections",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://dmns.netx.net/portals/public/#page/home"
+      }
+    ]
+  },
+  {
+    "path": "/about/",
+    "name": "About the Museum",
+    "eyebrow": "Denver Museum of Nature & Science",
+    "intro": "TODO: confirm with DMNS",
+    "floor": 1,
+    "wing": "neutral",
+    "sections": [
+      {
+        "title": "Our story",
+        "body": "TODO: confirm with DMNS"
+      },
+      {
+        "title": "Leadership & Board",
+        "body": "TODO: confirm with DMNS"
+      },
+      {
+        "title": "Strategic Plan",
+        "body": "TODO: confirm with DMNS"
+      }
+    ]
+  },
+  {
+    "path": "/support/",
+    "name": "Support the Museum",
+    "eyebrow": "Keep curiosity growing",
+    "intro": "TODO: confirm with DMNS",
+    "floor": 1,
+    "wing": "neutral",
+    "sections": [
+      {
+        "title": "Membership",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/purchase/membership/#general-memberships"
+      },
+      {
+        "title": "Donate",
+        "body": "TODO: confirm with DMNS",
+        "url": "https://www.dmns.org/?campaign=677961"
+      }
+    ]
+  }
+]

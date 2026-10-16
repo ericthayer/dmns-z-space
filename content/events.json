@@ -1,0 +1,26 @@
+[
+  {
+    "id": "event-1",
+    "name": "TODO: confirm with DMNS",
+    "date": null,
+    "category": "Science Lounge",
+    "description": "TODO: confirm with DMNS",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "id": "event-2",
+    "name": "TODO: confirm with DMNS",
+    "date": null,
+    "category": "Free Days",
+    "description": "TODO: confirm with DMNS",
+    "href": "https://www.dmns.org/programs-and-events/"
+  },
+  {
+    "id": "event-3",
+    "name": "TODO: confirm with DMNS",
+    "date": null,
+    "category": "Science Camps",
+    "description": "TODO: confirm with DMNS",
+    "href": "https://www.dmns.org/programs-and-events/"
+  }
+]

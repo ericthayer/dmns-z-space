@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": false, "rootDir": "src", "outDir": "dist/assets", "types": [], "removeComments": true },
+  "include": ["src/main.ts", "src/components", "src/lib"],
+  "exclude": ["src/lib/content.ts"]
+}

@@ -1,0 +1,15 @@
+@font-face{font-family:Newsreader;src:url('/fonts/newsreader-latin.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:Jost;src:url('/fonts/jost-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:Newsreader Fallback;src:local('Georgia');size-adjust:97%;ascent-override:95%;descent-override:25%;line-gap-override:0%}
+@font-face{font-family:Jost Fallback;src:local('Arial');size-adjust:103%;ascent-override:100%;descent-override:25%;line-gap-override:0%}
+:root{
+ color-scheme:dark;--surface-0:#0b0c0e;--surface-1:#141619;--surface-2:#1d2024;--ink:#f2efe8;--ink-muted:#b9b4aa;--rule:#2e3237;--light-warm:#ffd9a0;--accent-ticket:#f0ad00;--on-ticket:#0b0c0e;--focus-ring:#f0ad00;
+ --wing-space:#00a3f2;--wing-life:#8fc229;--wing-culture:#f4911e;--wing-wildlife:#779d2c;--wing-special:#c47ab1;--wing-theaters:#7298d0;--wing-red:#e27e70;--wing:#b9b4aa;--shadow-color:#000;--white:#fff;--plate-dark:#161819;--plate-light:#57574e;--arch-edge:#444035;--arch-lit:#a28a5c;--arch-shadow:#0e1010;
+ --font-display:Newsreader,'Newsreader Fallback',Georgia,serif;--font-label:Jost,'Jost Fallback',Arial,sans-serif;
+ --display:clamp(3.25rem,7.4vw,8.25rem);--heading:clamp(2.5rem,4.4vw,5rem);--body:1.1875rem;--label:.6875rem;
+ --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.5rem;--space-6:2rem;--space-7:3rem;--space-8:4rem;--space-9:6rem;--space-10:8rem;--gutter:clamp(1.25rem,5.5vw,7rem);--max-width:100rem;--radius:3px;
+ --motion-ease:cubic-bezier(.2,.7,.1,1);--enter-time:720ms;--exit-time:600ms;--lateral-time:640ms;--floor-time:700ms;--still-time:150ms;--fallback-time:300ms;--sealed-time:360ms;--vt-origin-x:50%;--vt-origin-y:50%;--near-dark:.4;--hero-spot:radial-gradient(ellipse at 75% 42%,color-mix(in srgb,var(--light-warm) 8%,transparent),transparent 60%);
+}
+@media(prefers-color-scheme:light){:root:not([data-theme=dark]){color-scheme:light;--surface-0:#f2efe8;--surface-1:#e6e2d9;--surface-2:#d9d5cc;--ink:#151719;--ink-muted:#54514b;--rule:#b7b2a7;--focus-ring:#795500;--wing:#54514b;--plate-dark:#dfdbd1;--plate-light:#a9a494;--arch-edge:#bbb3a0;--arch-lit:#7c6b4b;--arch-shadow:#d2cec4}}
+:root[data-theme=light]{color-scheme:light;--surface-0:#f2efe8;--surface-1:#e6e2d9;--surface-2:#d9d5cc;--ink:#151719;--ink-muted:#54514b;--rule:#b7b2a7;--focus-ring:#795500;--wing:#54514b;--plate-dark:#dfdbd1;--plate-light:#a9a494;--arch-edge:#bbb3a0;--arch-lit:#7c6b4b;--arch-shadow:#d2cec4}
+[data-wing=space]{--wing:var(--wing-space)}[data-wing=life]{--wing:var(--wing-life)}[data-wing=wildlife]{--wing:var(--wing-wildlife)}[data-wing=culture]{--wing:var(--wing-culture)}[data-wing=special]{--wing:var(--wing-special)}[data-wing=theaters]{--wing:var(--wing-theaters)}[data-wing=neutral]{--wing:var(--ink-muted)}
